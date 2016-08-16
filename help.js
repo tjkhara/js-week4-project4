@@ -2,6 +2,15 @@ $(document).ready(function(){
   $("#1").click(function(){
     $("#hidden1").css("display", "inline")
   })
+  
+  $("#submitBtn").click(function(){
+        
+    
+        var a = $("#textInput").val();
+        $( "<h3>" + a + "</h3>" ).insertAfter( ".test2" );
+        
+    });
+    
   $("#2").click(function(){
     $("#hidden2").css("display", "inline")
   })
