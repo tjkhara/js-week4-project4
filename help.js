@@ -27,6 +27,8 @@ $(document).ready(function(){
           }
     
   });
+    
+//    Adding a quick comment to test git
   
   $("#3").click(function(){
     $("#hidden3").css("display", "inline")
