@@ -14,6 +14,20 @@ $(document).ready(function(){
   $("#2").click(function(){
     $("#hidden2").css("display", "inline")
   })
+  
+  $(".click").click(function(){
+        
+      if($('#checkbox1').prop('checked')) {
+          
+          $( "h2" ).removeClass("hidden");
+          
+          
+          } else {
+              $( "h2" ).addClass("hidden");
+          }
+    
+  });
+  
   $("#3").click(function(){
     $("#hidden3").css("display", "inline")
   })
