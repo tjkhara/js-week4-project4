@@ -33,6 +33,25 @@ $(document).ready(function(){
   $("#3").click(function(){
     $("#hidden3").css("display", "inline")
   })
+  
+  var table = $("table tbody");
+
+    table.find('tr').each(function (i) {
+        var $tds = $(this).find('td'),
+            name = $tds.eq(0).text(),
+            weight = $tds.eq(1).text(),
+            hunger = $tds.eq(2).text();
+        // do something with name, weight, hunger
+//        alert('Row ' + (i + 1) + ' :Name: ' + name
+//              + '\nWeight ' + weight
+//              + '\nHunger: ' + hunger);
+        
+        if(hunger === "Hangry") {
+            $(this).css("color", "red");
+        }
+    });
+  
+  
   $("#4").click(function(){
     $("#hidden4").css("display", "inline")
   })
