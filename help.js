@@ -142,6 +142,16 @@ $('.table > tbody:last-child').append('<tr><td>Peter</td><td>7</td><td>Hangry</t
   $("#8").click(function(){
     $("#hidden8").css("display", "inline")
   })
+
+$( "#form-field" ).prop( "disabled", true );
+
+$( "#check-box" ).prop( "disabled", true );
+
+$("a").click(function(event){
+    event.preventDefault();
+});
+
+
   $("#9").click(function(){
     $("#hidden9").css("display", "inline")
   })
